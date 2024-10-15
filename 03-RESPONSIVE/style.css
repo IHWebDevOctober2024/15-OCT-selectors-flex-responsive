@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: rgb(55, 25, 255);
+  height: 3rem;
+  padding: 10px;
+}
+
+#menu {
+  display: none;
+  a {
+    color: white;
+  }
+}
+
+.star{
+    font-size: 40px;
+    margin-right: 4px;
+}
+
+#stars{
+    width: 350px;
+}
+
+/* 
+OLD SCHOOL
+@media (min-width: 640px) { */
+@media (width > 640px) {
+  #menu-icon {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+}
+
+@media (width > 1000px) {
+  #menu {
+    font-size: 2rem;
+  }
+}
+
+@media (width > 640px) and (width < 1000px) {
+  #menu {
+    background-color: brown;
+  }
+}

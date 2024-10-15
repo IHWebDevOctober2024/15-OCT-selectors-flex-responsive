@@ -1,0 +1,44 @@
+/* descendant */
+ul li {
+  color: cadetblue;
+}
+
+ol {
+  border: 3px solid black;
+  /* nesting */
+  li {
+    color: rgb(50, 99, 1);
+  }
+}
+
+/* direct descendant */
+ol > li {
+  color: rgb(109, 9, 203);
+}
+
+ol > em {
+  /* this is not going to be applied because the em is inside an li */
+  color: red;
+}
+
+/* adjacent sibling  */
+
+#item-8 + li {
+  font-size: 20px;
+}
+
+/* multiple selector */
+
+ul,
+ol {
+  background-color: rgb(228, 175, 175);
+}
+
+a[href="https://www.google.com"]
+{
+  font-size: 4rem;
+}
+
+li:hover {
+  color: red;
+}
